@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	margin: 0px;
+}.main-header{
+	background: #2ddf5c;
+	width: 100%;
+	padding: 8px 16px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.main-header > div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.main-header__brand{
+	color: white;
+    font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;	
+	display: inline-block;
+	text-shadow: 5px 5px 10px rgb(49, 0, 255);
+}
+
+.main-nav{
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 74px);
+}
+.main-nav__items{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.main-nav__item{
+	display: inline-block;
+	margin: 0px 16px;
+}
+.main-nav__item a{
+	color: #0e4f1f;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* adding psudo element */
+.main-nav__item a:hover,
+.main-nav__item a:active{
+	color: white;
+	border-bottom: 3px solid white;
+}
+/*adding psudo element in main header*/
+.main-nav__item--cta a{
+	color: white;
+	background: #ff1b68;
+	padding: 8px 16px;
+	border-radius: 7px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+	color: #ff1b68;
+	background: white;
+	border-radius: 50%;
+	transition-duration: 3s;
+}
+
+.button{
+	background: #0e4f1f;
+	color: white;
+	font: inherit;
+	padding: 8px;
+	border: 1.5px solid #0e4f1f;
+	font-weight: bold;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.button:hover,
+.button:active{
+	color: #0e4f1f;
+	background: white;
+}
+
+.button:focus{
+	outline: none;
+}
+.main-footer{
+	background: rgb(0,0,0);
+	margin-top: 48px;
+	padding: 32px;
+}
+.main-footer__links{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.main-footer__link{
+	display: inline-block;
+	margin: 0px 16px;
+}
+.main-footer__link a{
+	color: white;
+	text-decoration: none;
+}
+.main-footer__link a:hover,
+.main-footer__link a:active{
+	color: #ccc;
+}
+
+
